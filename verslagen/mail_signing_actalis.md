@@ -53,6 +53,7 @@ We zullen onze certificaten aanvragen bij Actalis, aangezien het een van de wein
 ### 5. Getekende mail verzenden
 1. Maak een mail op die je naar een persoon wilt verzenden.
 2. Klik op “options” en vervolgens op “S/MIME sign”
+
 ![Image of signing mail](../resources/afbeeldingen/evolution_sign_email.png)
 
 ### 6. Resultaat
