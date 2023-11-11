@@ -23,7 +23,9 @@ We zullen onze certificaten aanvragen bij Actalis, aangezien het een van de wein
 ### 3. Certificaat importeren in Evolution
 1. Open Evolution
 2. Ga naar edit --> preferences
+
 ![Image of evolution settings](../resources/afbeeldingen/evolution_preferences.png)
+
 
 3. Klik op “certificates” en nadien op “import”.
 ![Image of certificate import](../resources/afbeeldingen/evolution_certificate_import.png)
@@ -33,6 +35,7 @@ We zullen onze certificaten aanvragen bij Actalis, aangezien het een van de wein
 ### 4. Certificaat linken aan e-mail account
 1. Open Evolution
 2. Ga naar edit --> preferences
+
 ![Image of evolution settings](../resources/afbeeldingen/evolution_preferences.png)
 
 3. Selecteer jouw email account en klik op “edit”
