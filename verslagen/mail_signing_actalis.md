@@ -28,7 +28,9 @@ We zullen onze certificaten aanvragen bij Actalis, aangezien het een van de wein
 
 
 3. Klik op “certificates” en nadien op “import”.
+
 ![Image of certificate import](../resources/afbeeldingen/evolution_certificate_import.png)
+
 4. Selecteer het certificaat die je net hebt opgeslagen.
 5. Voer het wachtwoord in dat je bij het aanvragen van het certificaat te zien kreeg.
 
@@ -39,9 +41,13 @@ We zullen onze certificaten aanvragen bij Actalis, aangezien het een van de wein
 ![Image of evolution settings](../resources/afbeeldingen/evolution_preferences.png)
 
 3. Selecteer jouw email account en klik op “edit”
+
 ![Image of mail account](../resources/afbeeldingen/evolution_edit_mailaccountpng.png)
+
 4. Klik vervolgens op “security”. Bij “signing certificate” klik op “select”.
+
 ![Image of selected cert](../resources/afbeeldingen/evolution_select_certificate.png)
+
 5. Selecteer de juiste certificaat en klik op “ok”.
 
 ### 5. Getekende mail verzenden
