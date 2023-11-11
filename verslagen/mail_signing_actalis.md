@@ -1,7 +1,7 @@
 # Verslag: Implementatie S/MIME
 
 ### Inleiding:
-We zullen onze certificaten aanvragen bij Actalis, aangezien het een van de weinige CAs is die een gratis S/MIME-certificaat aanbiedt. Het heeft ook als voordeel dat de ontvangers van onze email geen root CA moeten downloaden op hun machine.
+We zullen onze certificaten aanvragen bij Actalis, aangezien het een van de weinige CAs is die een gratis S/MIME-certificaat aanbiedt. Het heeft ook als voordeel dat de ontvangers van onze email geen custom root CA moeten downloaden op hun machine.
 
 ### 1. Account aanmaken
 1. Ga op actalis.com en maak een account aan.  
