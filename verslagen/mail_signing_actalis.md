@@ -9,6 +9,7 @@ We zullen onze certificaten aanvragen bij Actalis, aangezien het een van de wein
 ![Image of actalis login](../resources/afbeeldingen/signup.png)
 
 2. Vul jouw gegevens in.
+   
 ![Image of actalis registration](../resources/afbeeldingen/registration.png)
 
 3. Bij de laatste stap krijg je het wachtwoord van je certificaat te zien. Bewaar dit goed, aangezien dit de laatste keer is dat je het wachtwoord zult zien.
@@ -16,6 +17,7 @@ We zullen onze certificaten aanvragen bij Actalis, aangezien het een van de wein
 ### 2. Certificaat
 1. In je mailbox zou je normaal gesproken een certificaat als bijlage moeten hebben ontvangen.
 ![Image of received certificates](../resources/afbeeldingen/received_certificate.png)
+
 2. Download het certificaat, zodat we het later kunnen importeren in onze Evolution-mailclient. We zullen dat certificaat gebruiken om e-mails te ondertekenen.
 
 ### 3. Certificaat importeren in Evolution
