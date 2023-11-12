@@ -68,8 +68,10 @@ Als alles goed is verlopen, konden we nu een e-mail zien die was ondertekend met
 ## Instellen van Versleuteling
 Bij het aanmaken van een versleutelingscertificaat is het belangrijk om de CN van de ontvanger van de e-mail te gebruiken.
 
-Voeg het versleutelingscertificaat toe aan Evolution. Selecteer het juiste certificaat.
 
+
+Voeg het versleutelingscertificaat toe aan Evolution. Selecteer het juiste certificaat. Hetzelfde zoals hiervoor maar hier selecteren we voor encrypteren het certificaat van jacksonmate356@hotmail.com
+![](../resources/afbeeldingen/import_cert3.png)
 Maak een e-mail en druk op de knop om de e-mail te ondertekenen en te versleutelen.
 ![](../resources/afbeeldingen/email.png)
 
