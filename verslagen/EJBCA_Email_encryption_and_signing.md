@@ -3,7 +3,9 @@
 ## Groep 4 - Jelle, Ilias, Sem, Mayk, Robbe, Jentse, Cedric
 
 ## Evolution Installatie
-We zijn begonnen met het installeren van Evolution als onze mailclient op Linux, bekend om zijn betrouwbaarheid en geschiktheid voor onze eisen. Voor deze taak hebben we nieuwe e-mailaccounts aangemaakt met de namen jentse.evolution@hotmail.com en jacksonmate356@hotmail.com.
+In eerste instantie zullen we Evolution gebruiken als mailclient op Linux. Deze staat bekend als betrouwbaar en voldoet goed aan onze eisen. 
+Voor deze taak hebben we een nieuwe e-mailaccounts aangemaakt met de namen jentse.evolution@hotmail.com en jacksonmate356@hotmail.com. 
+Vervolgens installeren we Evolution met de volgende commando: 
 
 Om Evolution te installeren, hebben we de volgende commando gebruikt:
 ```bash
@@ -12,19 +14,21 @@ sudo apt install evolution
 ```bash
 evolution
 ```
-Nu, open Evolution en voeg je e-mailaccount toe.
+Open nu Evolution en voeg jouw mailaccount toe.
 ![](../resources/afbeeldingen/settings_0.png)
 ![](../resources/afbeeldingen/settings_1.png)
 ![](../resources/afbeeldingen/settings_2.png)
 
+Zorg ervoor dat jouw IMAP en SMTP instellingen correct zijn (afhankelijk van jouw mail-provider). 
+
 Nadat deze configuraties zijn ingesteld, zijn we gereed om IMAP en SMTP te gebruiken voor het veilig verzenden en ontvangen van e-mails.
 
 ## EJBCA-certificaten voor Ondertekening
-Aanvankelijk werkten we aan het genereren van een certificaat, vergelijkbaar met de vorige taak waar de gebruiker een CSR uploadt en een certificaat van EJBCA ontvangt. Dit certificaat stelde ons in staat om e-mails te ondertekenen, maar er was een probleem met CN (Common Name) afwijking, zoals te zien is op de screenshot.
+In het begin hebben we gewerkt met het genereren van een certificaat, zoals in de vorige opdracht waar de gebruiker zelf een CSR uploadt en vervolgens een certificaat van EJBCA ontvangt. Hiermee konden we ondertekenen, maar het werkte niet volledig. Er was een mismatch tussen de CN en de verzender van de e-mail, zoals dit te zien is in de onderstaande screenshot: 
 ![](../resources/afbeeldingen/signed_mismatch.png)
 
 
-Om dit op te lossen, voegden we het e-mailattribuut toe aan ons Entity End-profiel, dat ontbrak en de afwijking tijdens het ondertekenen veroorzaakte. We hebben ook onze certificaatattributen aangepast om zowel ondertekening als versleuteling toe te staan. Standaard staan deze certificaten alleen ondertekening toe, maar nu staat Data-encryptie toe voor versleuteling.
+Om dit op te lossen, voegden we het e-mailattribuut toe aan ons Entity End-profiel. We hebben ook onze key usage aangepast om zowel ondertekening als versleuteling toe te staan. Standaard staan deze certificaten alleen ondertekening toe, maar nu staat Data-encryptie toe voor versleuteling.
 ![](../resources/afbeeldingen/cert_3.png)
 ![](../resources/afbeeldingen/cert_2.png)
 
