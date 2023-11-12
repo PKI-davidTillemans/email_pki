@@ -2,52 +2,50 @@
 
 ## Groep 4 - Jelle, Ilias, Sem, Mayk, Robbe, Jentse, Cedric
 
-### Evolution Installation
+Evolution Installatie
+We zijn begonnen met het installeren van Evolution als onze mailclient op Linux, bekend om zijn betrouwbaarheid en geschiktheid voor onze eisen. Voor deze taak hebben we nieuwe e-mailaccounts aangemaakt met de namen jentse.evolution@hotmail.com en jacksonmate356@hotmail.com.
 
-We began by installing Evolution as our mail client on Linux, known for its reliability and suitability for our requirements. We created new email accounts named jentse.evolution@hotmail.com and jacksonmate356@hotmail.com for this task.
-
-To install Evolution, we used the following command:
+Om Evolution te installeren, hebben we de volgende commando gebruikt:
 ```bash
 sudo apt install evolution
-Once Evolution was installed, we opened it with the command:
 ```
 ```bash
 evolution
 ```
-Now, open Evolution and add your email account.
+Nu, open Evolution en voeg je e-mailaccount toe.
 
-After setting up these configurations, we are ready to use IMAP and SMTP for sending and receiving emails securely.
+Nadat deze configuraties zijn ingesteld, zijn we gereed om IMAP en SMTP te gebruiken voor het veilig verzenden en ontvangen van e-mails.
 
-EJBCA Certificates for Signing
-Initially, we worked on generating a certificate, similar to the previous task where the user uploads a CSR and receives a certificate from EJBCA. This certificate allowed us to sign emails, but there was an issue with CN (Common Name) mismatch, as shown in the screenshot.
+EJBCA-certificaten voor Ondertekening
+Aanvankelijk werkten we aan het genereren van een certificaat, vergelijkbaar met de vorige taak waar de gebruiker een CSR uploadt en een certificaat van EJBCA ontvangt. Dit certificaat stelde ons in staat om e-mails te ondertekenen, maar er was een probleem met CN (Common Name) afwijking, zoals te zien is op de screenshot.
 
-To resolve this, we added the email attribute to our Entity End profile, which was missing and causing the mismatch during signing. We also modified our certificate attributes to allow both signing and encryption. By default, these certificates only allow signing, but now we permit Data Encipherment for encryption.
+Om dit op te lossen, voegden we het e-mailattribuut toe aan ons Entity End-profiel, dat ontbrak en de afwijking tijdens het ondertekenen veroorzaakte. We hebben ook onze certificaatattributen aangepast om zowel ondertekening als versleuteling toe te staan. Standaard staan deze certificaten alleen ondertekening toe, maar nu staat Data-encryptie toe voor versleuteling.
 
-With our updated End Entity profile and correctly configured certificate attributes, we requested EJBCA to generate a certificate for our email account. This certificate type matches the one we created, with the necessary settings for email encryption and signing. Instead of manually uploading a CSR, we simply generated a certificate from the CA with the CN as the email account's name.
+Met ons bijgewerkte End Entity-profiel en correct geconfigureerde certificaatattributen hebben we EJBCA verzocht om een certificaat te genereren voor ons e-mailaccount. Dit certificaattype komt overeen met degene die we hebben gemaakt, met de vereiste instellingen voor e-mailversleuteling en ondertekening. In plaats van handmatig een CSR te uploaden, hebben we eenvoudig een certificaat gegenereerd vanuit de CA met de CN als de naam van het e-mailaccount.
 
-CN, in this case, is the name of our email account: jentse.evolution@hotmail.com. We also checked the email attribute to link it. Then, we provided user credentials to secure the certificate. We noticed that Data Encipherment and Digital Signature were enabled in the Key Usage, allowing us to both sign and encrypt emails.
+CN is in dit geval de naam van ons e-mailaccount: jentse.evolution@hotmail.com. We hebben ook het e-mailattribuut aangevinkt om deze te koppelen. Vervolgens hebben we gebruikersreferenties verstrekt om het certificaat te beveiligen. We merkten op dat Data-encryptie en Digitale Handtekening waren ingeschakeld in het Key Usage, waardoor we zowel e-mails konden ondertekenen als versleutelen.
 
-Next, we downloaded this certificate as PKCS#12, which is the standard format expected by Evolution.
+Vervolgens hebben we dit certificaat gedownload als PKCS#12, wat het standaardformaat is dat Evolution verwacht.
 
-Subsequently, we imported the certificate into Evolution. The PKCS#12 file contained our CN and email attributes, along with the issuer of our certificate (EJBCA). We also imported the root CA on our Linux machine to establish trust.
+Daarna hebben we het certificaat geïmporteerd in Evolution. Het PKCS#12-bestand bevatte onze CN en e-mailattributen, samen met de uitgever van ons certificaat (EJBCA). We hebben ook de root-CA op onze Linux-machine geïmporteerd om vertrouwen te vestigen.
 
-We imported the certificate into Evolution to use it for signing. During this process, Evolution asked for the password set in EJBCA for user credentials.
+We hebben het certificaat geïmporteerd in Evolution om het te gebruiken voor ondertekening. Tijdens dit proces vroeg Evolution om het wachtwoord dat was ingesteld in EJBCA voor gebruikersreferenties.
 
-Once the certificate was imported, we configured our email account to use it for signing. This was done by going to Preferences > Mail accounts > editing our email account > Security.
+Nadat het certificaat was geïmporteerd, hebben we ons e-mailaccount geconfigureerd om het te gebruiken voor ondertekening. Dit deden we door naar Voorkeuren > E-mailaccounts > ons e-mailaccount bewerken > Beveiliging te gaan.
 
-We selected the imported certificate and indicated our intention to sign our emails from now on.
+We hebben het geïmporteerde certificaat geselecteerd en aangegeven dat we voortaan onze e-mails willen ondertekenen.
 
-If all went well, we could now see an email signed by the EJBCA certificate for jentse.evolution@hotmail.com.
+Als alles goed is verlopen, konden we nu een e-mail zien die was ondertekend met het EJBCA-certificaat voor jentse.evolution@hotmail.com.
 
-Setting Up Encryption
-When creating an encryption certificate, it's important to use the CN of the email recipient.
+Instellen van Versleuteling
+Bij het aanmaken van een versleutelingscertificaat is het belangrijk om de CN van de ontvanger van de e-mail te gebruiken.
 
-Add the encryption certificate to Evolution. Select the appropriate certificate.
+Voeg het versleutelingscertificaat toe aan Evolution. Selecteer het juiste certificaat.
 
-Create an email and press the button to sign and encrypt the email.
+Maak een e-mail en druk op de knop om de e-mail te ondertekenen en te versleutelen.
 
-Here's what the recipient sees.
+Dit is wat de ontvanger ziet.
 
-Encrypted emails can also be decrypted if we import the certificate generated by EJBCA for the email jacksonmate356@hotmail.com.
+Ook geëncrypteerde e-mails kunnen worden gedecodeerd als we het certificaat importeren dat is gegenereerd door EJBCA voor het e-mailadres jacksonmate356@hotmail.com.
 
 Threat Model
