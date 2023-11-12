@@ -13,7 +13,7 @@ sudo apt install evolution
 evolution
 ```
 Nu, open Evolution en voeg je e-mailaccount toe.
-
+![](../resources/afbeeldingen/settings_0.png)
 Nadat deze configuraties zijn ingesteld, zijn we gereed om IMAP en SMTP te gebruiken voor het veilig verzenden en ontvangen van e-mails.
 
 EJBCA-certificaten voor Ondertekening
