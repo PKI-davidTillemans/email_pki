@@ -76,6 +76,6 @@ Maak een e-mail en druk op de knop om de e-mail te ondertekenen en te versleutel
 Dit is wat je krijgt als je alles correct hebt ingeteld.
 ![](../resources/afbeeldingen/sent.png)
 Ook geëncrypteerde e-mails kunnen worden gedecodeerd als we het certificaat importeren dat is gegenereerd door EJBCA voor het e-mailadres jacksonmate356@hotmail.com.
-![](../resources/afbeeldingen/signed_cert.png)
+![](../resources/afbeeldingen/signed_enc.png)
 Threat Model:
 
