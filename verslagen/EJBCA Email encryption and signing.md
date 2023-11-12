@@ -2,7 +2,7 @@
 
 ## Groep 4 - Jelle, Ilias, Sem, Mayk, Robbe, Jentse, Cedric
 
-Evolution Installatie
+## Evolution Installatie
 We zijn begonnen met het installeren van Evolution als onze mailclient op Linux, bekend om zijn betrouwbaarheid en geschiktheid voor onze eisen. Voor deze taak hebben we nieuwe e-mailaccounts aangemaakt met de namen jentse.evolution@hotmail.com en jacksonmate356@hotmail.com.
 
 Om Evolution te installeren, hebben we de volgende commando gebruikt:
