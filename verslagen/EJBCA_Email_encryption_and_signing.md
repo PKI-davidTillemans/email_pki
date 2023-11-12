@@ -16,6 +16,7 @@ Nu, open Evolution en voeg je e-mailaccount toe.
 ![](../resources/afbeeldingen/settings_0.png)
 ![](../resources/afbeeldingen/settings_1.png)
 ![](../resources/afbeeldingen/settings_2.png)
+
 Nadat deze configuraties zijn ingesteld, zijn we gereed om IMAP en SMTP te gebruiken voor het veilig verzenden en ontvangen van e-mails.
 
 ## EJBCA-certificaten voor Ondertekening
