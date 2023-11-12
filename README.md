@@ -3,3 +3,4 @@ In deze opdracht stellen we ons tot doel om een configuratie op te zetten waarme
 
 ## Verslagen / Documentaties
 - [Email signing with Actalis](./verslagen/mail_signing_actalis.md)
+- [Email signing & encrypting with EJBCA](./verslagen/EJBCA Email encryption and signing.md)
