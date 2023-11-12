@@ -10,10 +10,10 @@ To install Evolution, we used the following command:
 ```bash
 sudo apt install evolution
 Once Evolution was installed, we opened it with the command:
-
-bash
-Copy code
+```
+```bash
 evolution
+```
 Now, open Evolution and add your email account.
 
 After setting up these configurations, we are ready to use IMAP and SMTP for sending and receiving emails securely.
