@@ -84,5 +84,8 @@ Dit is wat je krijgt als je alles correct hebt ingeteld.
 ![](../resources/afbeeldingen/sent.png)
 Ook geëncrypteerde e-mails kunnen worden gedecodeerd als we het certificaat importeren dat is gegenereerd door EJBCA voor het e-mailadres jacksonmate356@hotmail.com.
 ![](../resources/afbeeldingen/signed_enc.png)
-Threat Model:
+Threat Model zonder S/MIME:
 ![](../resources/afbeeldingen/threat_model.png)
+
+Threat Model met S/MIME:
+![](../resources/afbeeldingen/threat_model_smime.png)
