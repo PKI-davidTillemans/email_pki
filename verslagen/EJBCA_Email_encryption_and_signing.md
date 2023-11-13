@@ -89,3 +89,11 @@ Threat Model zonder S/MIME:
 
 Threat Model met S/MIME:
 ![](../resources/afbeeldingen/threat_model_smime.png)
+
+## Interoperabilitiet
+**Mac-client**
+Werkt goed.
+![](../resources/afbeeldingen/bewijs_mac_client.png)
+
+**Microsoft**
+Niet getest. Ze hebben hun eigen SMTP-server gemaakt met PostFix, dat niet verbonden is met het internet.
