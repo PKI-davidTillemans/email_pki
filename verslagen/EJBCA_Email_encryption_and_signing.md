@@ -93,6 +93,8 @@ Threat Model met S/MIME:
 ## Interoperabilitiet
 **Mac-client**
 Werkt goed.
+
+
 ![](../resources/afbeeldingen/bewijs_mac_client.png)
 
 **Microsoft**
