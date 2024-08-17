@@ -9,6 +9,9 @@ Om de integriteit van de publieke sleutel van de afzender te waarborgen, wordt e
 
 Bij de tweede opdracht wordt gebruikgemaakt van een officieel certificaat van Actalis. Dit certificaat wordt in Evolution geïmporteerd en biedt de mogelijkheid om e-mails te ondertekenen en te versleutelen met een certificaat dat door een erkende externe CA is uitgegeven.
 
+## Conclusie over Evolution
+Evolution, als de officiële mailclient van GNOME, biedt een betrouwbare en goed ondersteunde oplossing voor e-mailcommunicatie op Linux-systemen. Het systeem heeft een uitgebreide documentatiebasis, wat de installatie en configuratie vergemakkelijkt. Evolution biedt brede ondersteuning voor certificaten, zowel van interne als externe Certificate Authorities, en is gebruiksvriendelijk in zijn benadering van e-mailbeveiliging. Met zijn mogelijkheden voor digitale handtekeningen en versleuteling via S/MIME, biedt Evolution een praktische en effectieve oplossing voor veilige e-mailcommunicatie.
+
 ## Verslagen / Documentaties
 - [Email signing with Actalis](./verslagen/mail_signing_actalis.md)
 - [Email signing & encrypting with EJBCA](./verslagen/EJBCA_Email_encryption_and_signing.md)
